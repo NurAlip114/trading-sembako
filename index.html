@@ -79,6 +79,7 @@
             object-fit: cover;
             border-radius: 8px;
             margin-bottom: 10px;
+            cursor: pointer; /* Menambahkan kursor pointer untuk menandakan gambar bisa diklik */
         }
 
         .product-card h3 {
@@ -257,7 +258,7 @@
     <div class="product-grid">
         <!-- Produk 1 -->
         <div class="product-card">
-            <img src="img/beras-min.jpg" alt="beras">
+            <img src="img/beras-min.jpg" alt="beras" onclick="openModal(0)">
             <h3>beras</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
@@ -268,8 +269,8 @@
 
         <!-- Produk 2 -->
         <div class="product-card">
-            <img src="img/gula-min.jpg" alt="gula">
-            <h3>gula</h3>
+            <img src="img/gula-min.jpg" alt="gula" onclick="openModal(1)">
+            <h3>gula pasir</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
                 <button class="btn btn-view" onclick="openModal(1)">Lihat Produk</button>
@@ -279,8 +280,8 @@
 
         <!-- Produk 3 -->
         <div class="product-card">
-            <img src="img/kecap-min.jpg" alt="kecap">
-            <h3>kecap</h3>
+            <img src="img/kecap-min.jpg" alt="kecap" onclick="openModal(2)">
+            <h3>kecap sedap</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
                 <button class="btn btn-view" onclick="openModal(2)">Lihat Produk</button>
@@ -290,7 +291,7 @@
 
         <!-- Produk 4 -->
         <div class="product-card">
-            <img src="img/minyak-min.jpg" alt="minyak">
+            <img src="img/minyak-min.jpg" alt="minyak" onclick="openModal(3)">
             <h3>minyak</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
@@ -301,7 +302,7 @@
 
         <!-- Produk 5 -->
         <div class="product-card">
-            <img src="img/susu-min.jpg" alt="susu">
+            <img src="img/susu-min.jpg" alt="susu" onclick="openModal(4)">
             <h3>susu</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
@@ -312,8 +313,8 @@
 
         <!-- Produk 6 -->
         <div class="product-card">
-            <img src="img/tepung-min.jpg" alt="tepung">
-            <h3>tepung</h3>
+            <img src="img/tepung-min.jpg" alt="tepung" onclick="openModal(5)">
+            <h3>tepung tapioka</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
                 <button class="btn btn-view" onclick="openModal(5)">Lihat Produk</button>
@@ -323,7 +324,7 @@
 
         <!-- Produk 7 -->
         <div class="product-card">
-            <img src="img/masako-min.jpg" alt="masako">
+            <img src="img/masako-min.jpg" alt="masako" onclick="openModal(6)">
             <h3>masako</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
@@ -334,7 +335,7 @@
 
         <!-- Produk 8 -->
         <div class="product-card">
-            <img src="img/segitigabiru-min.jpg" alt="segitiga biru">
+            <img src="img/segitigabiru-min.jpg" alt="segitiga biru" onclick="openModal(7)">
             <h3>segitiga biru</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
@@ -345,8 +346,8 @@
 
         <!-- Produk 9 -->
         <div class="product-card">
-            <img src="img/gulame-min.jpg" alt="gulame">
-            <h3>gulame</h3>
+            <img src="img/gulame-min.jpg" alt="gulame" onclick="openModal(8)">
+            <h3>gula merah</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
                 <button class="btn btn-view" onclick="openModal(8)">Lihat Produk</button>
@@ -356,8 +357,8 @@
 
         <!-- Produk 10 -->
         <div class="product-card">
-            <img src="img/mamalaemon-min.jpg" alt="mamalaemon">
-            <h3>mamalaemon</h3>
+            <img src="img/mamalemon-min.jpg" alt="mamalemon" onclick="openModal(9)">
+            <h3>mama lemon</h3>
             <p>Kualitas Terbaik</p>
             <div class="card-actions">
                 <button class="btn btn-view" onclick="openModal(9)">Lihat Produk</button>
@@ -395,7 +396,7 @@
             ['img/masako-min.jpg', 'img/masako2-min.jpg'],
             ['img/segitigabiru-min.jpg', 'img/segitigabiru2-min.jpg'],
             ['img/gulame-min.jpg', 'img/gulame2-min.jpg'],
-            ['img/mamalaemon-min.jpg', 'img/mamalamemon2-min.jpg']
+            ['img/mamalemon-min.jpg', 'img/mamalemon2-min.jpg']
         ];
 
         let slideIndex = 1;
